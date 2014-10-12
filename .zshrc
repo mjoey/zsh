@@ -1,5 +1,8 @@
 # run this command to change your default shell to zsh: chsh /bin/zsh
 
+#define EDITOR
+export EDITOR=vim
+
 #define theme
 autoload -U promptinit
 promptinit
