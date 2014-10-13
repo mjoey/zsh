@@ -37,7 +37,7 @@ export TERM=xterm-256color
 
 #colors
 alias ls='ls --color'
-LS_COLORS='di=1:fi=36:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
+LS_COLORS='di=1:fi=37:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
 export LS_COLORS
 
 #zsh-syntax-highlighting
@@ -63,4 +63,7 @@ autoload -U tetris
 zle -N tetris
 bindkey ^T tetris
 
-
+source ~/zsh-git-prompt/zshrc.sh
+PROMPT='[%n][$(git_super_status)]:%B%/%b # '
+ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[white]%}%{✚%G%}"
+ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[green]%}"
