@@ -39,6 +39,7 @@ export TERM=xterm-256color
 alias ls='ls --color'
 LS_COLORS='di=1:fi=37:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
 export LS_COLORS
+export GREP_OPTIONS='--color=auto'
 
 #zsh-syntax-highlighting
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
