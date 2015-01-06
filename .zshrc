@@ -1,3 +1,6 @@
+#set umask
+umask 0003
+
 # run this command to change your default shell to zsh: chsh /bin/zsh
 
 #define EDITOR
