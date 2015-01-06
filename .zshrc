@@ -65,6 +65,6 @@ zle -N tetris
 bindkey ^T tetris
 
 source ~/zsh-git-prompt/zshrc.sh
-PROMPT='[%n][$(git_super_status)]:%B%/%b # '
+PROMPT='[%n@%m][$(git_super_status)]:%B%/%b # '
 ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[white]%}%{✚%G%}"
 ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[green]%}"
